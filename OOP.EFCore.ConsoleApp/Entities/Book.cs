@@ -25,5 +25,8 @@ namespace OOP.EFCore.ConsoleApp.Entities
 
         // navigation property
         public BookDetail BookDetail { get; set; }
+
+        // collection navigation property
+        public ICollection<BookAuthor> BookAuthors { get; set; }
     }
 }
