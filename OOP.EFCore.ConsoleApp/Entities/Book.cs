@@ -15,10 +15,15 @@ namespace OOP.EFCore.ConsoleApp.Entities
 
         public DateTime CreatedDate { get; set; }
 
+        public decimal Price { get; set; }
+
         // foreign key
         public int? CategoryId { get; set; } 
         
         // simple navigation property
         public Category Category { get; set; } 
+
+        // navigation property
+        public BookDetail BookDetail { get; set; }
     }
 }

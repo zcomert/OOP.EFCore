@@ -24,6 +24,7 @@ namespace OOP.EFCore.ConsoleApp.DAL
         {
             modelBuilder.ApplyConfiguration(new BookMap());
             modelBuilder.ApplyConfiguration(new CategoryMap());
+            modelBuilder.ApplyConfiguration(new BookDetailMap());
         }
     }
 }
