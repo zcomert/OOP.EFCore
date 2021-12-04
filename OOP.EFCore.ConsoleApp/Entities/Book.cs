@@ -14,5 +14,11 @@ namespace OOP.EFCore.ConsoleApp.Entities
         public string Title { get; set; }
 
         public DateTime CreatedDate { get; set; }
+
+        // foreign key
+        public int? CategoryId { get; set; } 
+        
+        // simple navigation property
+        public Category Category { get; set; } 
     }
 }

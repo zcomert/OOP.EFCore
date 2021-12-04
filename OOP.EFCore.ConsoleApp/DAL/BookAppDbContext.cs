@@ -12,7 +12,8 @@ namespace OOP.EFCore.ConsoleApp.DAL
     public class BookAppDbContext : DbContext
     {
         public DbSet<Book> Books { get; set; }
-        
+        public DbSet<Category> Categories {get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder 
             optionsBuilder)
         {
@@ -22,6 +23,7 @@ namespace OOP.EFCore.ConsoleApp.DAL
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new BookMap());
+            modelBuilder.ApplyConfiguration(new CategoryMap());
         }
     }
 }
