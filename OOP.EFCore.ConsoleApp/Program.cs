@@ -10,6 +10,8 @@ namespace OOP.EFCore.ConsoleApp
     {
         static void Main(string[] args)
         {
+            var context = new BookAppDbContext();
+            //Console.WriteLine(context.Authors.Where(a => a.FullName.Contains("Homer")).Count());
             Console.ReadKey();
         }
 
@@ -27,7 +29,6 @@ namespace OOP.EFCore.ConsoleApp
                                 .FirstOrDefault(),
                     BookDetail = new BookDetail
                     {
-                        City = "Samsun",
                         Country = "Turkey",
                         ISSN = "123-456-789"
                     }

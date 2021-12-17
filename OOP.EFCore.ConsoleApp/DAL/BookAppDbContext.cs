@@ -4,6 +4,7 @@ using OOP.EFCore.ConsoleApp.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -27,11 +28,7 @@ namespace OOP.EFCore.ConsoleApp.DAL
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.ApplyConfiguration(new BookMap());
-            modelBuilder.ApplyConfiguration(new CategoryMap());
-            modelBuilder.ApplyConfiguration(new BookDetailMap());
-            modelBuilder.ApplyConfiguration(new AuthorMap());
-            modelBuilder.ApplyConfiguration(new BookAuthorMap());
+            modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
         }
     }
 }

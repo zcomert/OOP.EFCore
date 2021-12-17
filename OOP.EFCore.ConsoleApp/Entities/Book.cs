@@ -17,6 +17,8 @@ namespace OOP.EFCore.ConsoleApp.Entities
 
         public decimal Price { get; set; }
 
+        public string ImageURL { get; set; }
+
         // foreign key
         public int? CategoryId { get; set; } 
         

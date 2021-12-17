@@ -24,6 +24,14 @@ namespace OOP.EFCore.ConsoleApp.DAL.Mapping
                 .HasOne(ba => ba.Author)
                 .WithMany(a => a.BookAuthors)
                 .HasForeignKey(ba => ba.AuthorId);
+
+            builder
+                .HasData(new List<BookAuthor>
+                {
+                    new BookAuthor{ BookAuthorId=1, BookId=1, AuthorId = 1 },
+                    new BookAuthor{ BookAuthorId=2, BookId=2, AuthorId = 1 },
+                    new BookAuthor{ BookAuthorId=3, BookId=3, AuthorId = 1 },
+                });
         }
     }
 }

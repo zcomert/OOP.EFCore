@@ -18,26 +18,21 @@ namespace OOP.EFCore.ConsoleApp.DAL.Mapping
             builder.Property(a => a.CreatedDate)
                 .HasDefaultValueSql("GETDATE()");
 
-            builder.Ignore(a => a.FullName);
-
             builder.HasData(
                 new Author
                 {
                     AuthorId =1,
-                    FirstName = "Zafer",
-                    LastName = "Cömert"
+                    FullName = "Zafer CÖMERT"
                 },
                 new Author
                 {
                     AuthorId=2,
-                    FirstName = "Ahmet",
-                    LastName="Yıldırım"
+                    FullName = "Ahmet Can"
                 },
                 new Author
                 {
                     AuthorId = 3,
-                    FirstName ="Fatih",
-                    LastName = "Çelik"
+                    FullName ="Fatih Mehmet Çelik"
                 }
             );
         }

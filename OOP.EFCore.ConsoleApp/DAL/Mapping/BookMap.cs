@@ -21,10 +21,13 @@ namespace OOP.EFCore.ConsoleApp.DAL.Mapping
             builder.Property(b => b.CreatedDate)
                 .HasDefaultValueSql("GETDATE()");
 
+            builder.Property(b => b.ImageURL)
+                .HasDefaultValue("/images/default.jpg");
+
             builder.HasData(
-                new Book { BookId=1, Title="Devlet", CategoryId=3 },
-                new Book { BookId=2, Title="Yoldaki İşaretler", CategoryId = 3 },
-                new Book { BookId = 3, Title = "Yalnızlık Sözleri", CategoryId = 3 }
+                new Book { BookId=1, Title="Yazılım Evi", CategoryId=1 },
+                new Book { BookId=2, Title="Nesne Yönelimli Programlama", CategoryId = 1 },
+                new Book { BookId = 3, Title = "Yazılım Gereksinimi ve Modelleme", CategoryId = 1 }
             );
 
             builder.HasOne(b => b.Category)

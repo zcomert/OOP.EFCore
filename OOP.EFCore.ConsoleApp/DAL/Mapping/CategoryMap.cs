@@ -18,9 +18,9 @@ namespace OOP.EFCore.ConsoleApp.DAL.Mapping
                 .HasDefaultValue("No info.");
 
             builder.HasData(
-                new Category { CategoryId = 1, CategoryName = "Health" },
-                new Category { CategoryId = 2, CategoryName = "Computer Science" },
-                new Category { CategoryId = 3, CategoryName = "Novel" }
+                new Category { CategoryId = 1, CategoryName = "Computer Science" },
+                new Category { CategoryId = 2, CategoryName = "Classic" },
+                new Category { CategoryId = 3, CategoryName = "Literature" }
             );
         }
     }
