@@ -26,6 +26,15 @@ namespace OOP.EFCore.ConsoleApp
             //      Book2.Title
             // Refactore : GetCategoriesWithBooks()
 
+
+            // Book.Title
+            //      Categor     : CategoryName
+            //      BookDetail  : Language, Countr, Year, NumberOfPage, Link
+            //      BookAuthors : FullName
+            // Formatında çıktı üretecek bir sorgu tasarımı gerçekleştiriniz. 
+            // Refactore : GetBooksWithFullDetail()
+
+
            
             Console.ReadKey();
         }
