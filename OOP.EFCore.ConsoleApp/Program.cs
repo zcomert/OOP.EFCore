@@ -10,8 +10,23 @@ namespace OOP.EFCore.ConsoleApp
     {
         static void Main(string[] args)
         {
-            var context = new BookAppDbContext();
-            //Console.WriteLine(context.Authors.Where(a => a.FullName.Contains("Homer")).Count());
+            // Books tablosunda tüm kitapları Title alanına göre sıra şekilde listeleyiniz.
+            // Refactore : GetBookList()
+
+            // Books ve Categories tablolarındaki kayıtları birlikte verecek şekilde
+            // bir liste hazırlayınız.
+            // Refactore : GetBooksWithCategories()
+            // book.Category.CategoryName şeklinde alan dolu olmalıdır. 
+
+            // Bir Category adını verip daha sonra bu kategori altında yer alan tüm kitapları
+            // bir sekme (tab) içerden verecek şekilde çıktı üretecek tasarımı gerçekleştiriniz.
+            // Örnek
+            // Category 1
+            //      Book1.Title
+            //      Book2.Title
+            // Refactore : GetCategoriesWithBooks()
+
+           
             Console.ReadKey();
         }
 

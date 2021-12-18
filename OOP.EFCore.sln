@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOP.EFCore.ConsoleApp", "OOP.EFCore.ConsoleApp\OOP.EFCore.ConsoleApp.csproj", "{A1012E30-2100-485C-8CC0-41103EC75B11}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookCsvImporter", "BookCsvImporter\BookCsvImporter.csproj", "{DE34013C-86D4-4FF8-BB23-D2F0BF605BC1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookCsvImporter", "BookCsvImporter\BookCsvImporter.csproj", "{DE34013C-86D4-4FF8-BB23-D2F0BF605BC1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
